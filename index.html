@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Restaurant Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Savour the Journey.</h1>
+    <p class="subtitle">Easily track the restaurants you’ve visited and loved, and the ones you can’t wait to try.</p>  
+
+  <section class="card">
+    <h2>Add Restaurant</h2>
+    <form id="addForm">
+      <label>
+        Name
+        <input id="name" required placeholder="e.g., Pai" />
+      </label>
+      <label>
+        Category
+        <input id="category" placeholder="e.g., Thai" />
+      </label>
+      <label>
+        Rating (1–5)
+        <input id="rating" type="number" min="1" max="5" value="5" />
+      </label>
+      <label>
+        Notes
+        <input id="notes" placeholder="e.g., Get khao soi" />
+      </label>
+      <button type="submit">Add</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <div class="tabs">
+      <button class="tab active" data-tab="all">All</button>
+      <button class="tab" data-tab="faves">Favorites ⭐</button>
+    </div>
+
+    <ul id="list" class="list"></ul>
+  </section>
+
+  <footer>
+    <small>v0.1.0 • Familiar top nav & buttons used across pages. Clear “Add” then list.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
